@@ -13,14 +13,6 @@
       "price": 59.99,
       "quantity": 55,
       "id": "aa76af87-8e0f-4a1b-855b-e91254f6fd9c"
-    },
-    {
-      "name": "Adidas Sport new addition",
-      "price": 159.99,
-      "quantity": 15,
-      "description": "Really comfy shoes",
-      "id": "e9cb1ad0-9ae8-49b9-bc27-806e57aaa208",
-      "color": "White"
     }
   ]
 }

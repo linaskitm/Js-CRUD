@@ -1,3 +1,23 @@
+document.getElementById("load").onclick = function () {
+  // const req = new XMLHttpRequest();
+  // req.open("GET", "/api/products");
+  // req.onload = function () {
+  //   const data = JSON.parse(req.response);
+  //   addList({ data });
+  // };
+  // req.send();
+  const value = document.getElementById("product-id").value;
+  if (value === "") {
+    axios.get("/api/products").then(addList);
+  } else {
+    axios
+      .get(`/api/products/${value}`)
+      .then(addSingle)
+      .catch((err) => {
+        if (err.response.status === 404) notFound();
+      });
+  }
+};
 
 function addList({ data }) {
   resetContentArea();
